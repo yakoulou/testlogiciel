@@ -6,7 +6,7 @@ public class Voiture {
     int prix;
     int id;
 
-    public Voiture(){
+    public Voiture(String clio3){
     }
 
     public Voiture(String marque, int prix) {
