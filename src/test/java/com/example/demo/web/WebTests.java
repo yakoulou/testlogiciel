@@ -33,7 +33,7 @@ class WebTests {
     @Test
     public void getTest()throws Exception{
         when(statistiqueImpl.prixMoyen()).thenReturn(new Echantillon(1,3000));
-        mockMvc.perform(get("/statistique")).andDo(print()).andExpect(status().isOk()).andExpect(jsonPath("$.nombrevoiture").value("1")).andExpect(jsonPath("$.prixMoyen").value("3000")).andReturn();
+        mockMvc.perform(get("/statistique")).andDo(print()).andExpect(status().isOk()).andExpect(jsonPath("$.nombreDeVoitures").value("1")).andExpect(jsonPath("$.prixMoyen").value("3000")).andReturn();
 
     }
 }
