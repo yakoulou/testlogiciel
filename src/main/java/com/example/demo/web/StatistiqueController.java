@@ -23,7 +23,7 @@ public class StatistiqueController {
     }
     @GetMapping(value = "/")
     public String getStatistique()  {
-        return "Bienvenue  sur le site de statistiques";
+        return "Bienvenue  sur le site ";
 
     }
 
