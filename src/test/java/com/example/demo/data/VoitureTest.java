@@ -21,8 +21,32 @@ public class VoitureTest {
         assertEquals("Peugeot", v1.getMarque());
         assertEquals(25000, v1.getPrix());
 
+        Voiture v2 = new Voiture("clio3");
+
+        // Test des setters/getters
+        v1.setMarque("Peugeot");
+        v1.setPrix(25000);
+        assertEquals("Peugeot", v1.getMarque());
+        assertEquals(25000, v1.getPrix());
+
+        // Test de l'ID
+        v1.setId(1);
+        assertEquals(1, v1.getId());
+
+        // Test de toString
+        String expectedToString = "Car{marque='Peugeot', prix=25000, id=1}";
+        assertEquals(expectedToString, v1.toString());
     }
+
+    @Test
+    void testerConstructeurSimple() {
+        // Test spécifique du constructeur avec un seul paramètre
+        Voiture v = new Voiture("clio3");
+        assertEquals("clio3", v.getMarque());
+    }
+
+}
     	
     
 
-}
+
