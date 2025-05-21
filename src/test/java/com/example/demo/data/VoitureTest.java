@@ -15,7 +15,7 @@ public class VoitureTest {
     @Test
     void creerVoiture() {
     	Voiture v1=new Voiture("clio4",3000);
-        Assert.isTrue(v1.getMarque() == "clio3", "La marque ne correspond pas");
+        Assert.isTrue(v1.getMarque().equals("clio4"), "La marque ne correspond pas");
         v1.setMarque("Peugeot");
         v1.setPrix(25000);
         assertEquals("Peugeot", v1.getMarque());
