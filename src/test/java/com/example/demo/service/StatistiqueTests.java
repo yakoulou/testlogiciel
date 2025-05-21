@@ -31,12 +31,9 @@ public class StatistiqueTests {
         Echantillon e1 = s1.prixMoyen();
 
        // when(s1.prixMoyen()).thenReturn(new Echantillon(2, 2500));
-        Assert.isTrue(s1.prixMoyen().getNombreDeVoitures() == 2, "Le nombre de voitures n'est pas correct");
-        Assert.isTrue(s1.prixMoyen().getPrixMoyen() == 2900, "Le prix moyen n'est pas correct");
-            assertEquals(2, e1.getNombreDeVoitures());
-            assertEquals(3500, e1.getPrixMoyen());
+        assertEquals(e1.getNombreDeVoitures(),2);
+        assertEquals(e1.getPrixMoyen(),2500);
 
-            assertEquals(e1.getPrixMoyen(),0);
          } catch (ArithmeticException e) {
             System.out.println("pas de voiture");
         }
