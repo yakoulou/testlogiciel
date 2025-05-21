@@ -24,8 +24,8 @@ public class StatistiqueTests {
         try {
         Voiture v1 = mock(Voiture.class);
         Voiture v2 = mock(Voiture.class);
-        when(v1.getPrix()).thenReturn(2000);
-        when(v2.getPrix()).thenReturn(3000);
+        when(v1.getPrix()).thenReturn(2000);// si jamais dans la suite du programme tu a besoin de faire un getprix() tu vas me mettre 100
+        when(v2.    getPrix()).thenReturn(3000);// Quelle comportement le mock doit avoir !
 
         Echantillon e1 = s1.prixMoyen();
        // when(s1.prixMoyen()).thenReturn(new Echantillon(2, 2500));
