@@ -21,6 +21,11 @@ public class StatistiqueController {
         }
 
     }
+    @GetMapping(value = "/")
+    public String getStatistique()  {
+        return "Bienvenue  sur le site de statistiques";
+
+    }
 
     @PostMapping("/voiture")
     public void creerVoiture(@RequestBody Voiture voiture){
